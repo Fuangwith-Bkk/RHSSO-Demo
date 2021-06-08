@@ -1,0 +1,109 @@
+dn: ou=People,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: People
+
+dn: ou=RealmRoles,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: RealmRoles
+
+dn: ou=FinanceRoles,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: FinanceRoles
+
+dn: uid=voravit,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Voravit
+sn: Lertgitipongpant
+mail: voravit@example.com
+postalCode: 10200
+uid: voravit
+userPassword:: cGFzc3cwcmQ=
+
+dn: uid=audomsak,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Audomsak
+sn: Suksanti
+mail: audomsak@example.com
+postalCode: 10300
+uid: audomsak
+userPassword:: cGFzc3cwcmQ=
+
+dn: uid=chatchai,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Chatchai
+sn: Kongmanee
+mail: chatchat@example.com
+postalCode: 10100
+uid: chatchai
+userPassword:: cGFzc3cwcmQ=
+
+dn: uid=supannee,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Supannee
+sn: Amnajmongkol
+mail: supannee@example.com
+postalCode: 10400
+uid: supannee
+userPassword:: cGFzc3cwcmQ=
+
+dn: uid=kriangsak,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kriangsak
+sn: Jeerathanyasakul
+mail: kraingsak@example.com
+postalCode: 10500
+uid: kriangsak
+userPassword:: cGFzc3cwcmQ=
+
+dn: uid=fsophara,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fuangwit
+sn: Sopharat
+mail: fuangwit@example.com
+postalCode: 10500
+uid: fsophara
+userPassword:: cGFzc3cwcmQ=
+
+
+dn: cn=ldap-user,ou=RealmRoles,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: ldap-user
+member: uid=supannee,ou=People,dc=example,dc=com
+member: uid=audomsak,ou=People,dc=example,dc=com
+member: uid=voravit,ou=People,dc=example,dc=com
+member: uid=chatchai,ou=People,dc=example,dc=com
+
+dn: cn=ldap-admin,ou=RealmRoles,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: ldap-admin
+member: uid=fsophara,ou=People,dc=example,dc=com
+
+dn: cn=accountant,ou=FinanceRoles,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: accountant
+member: uid=kriangsak,ou=People,dc=example,dc=com
+

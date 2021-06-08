@@ -1,5 +1,5 @@
 {
-  "realm" : "demo",
+  "realm" : "rhsso",
   "auth-server-url" : "http://localhost:8080/auth",
   "resource" : "js-console"
 }
