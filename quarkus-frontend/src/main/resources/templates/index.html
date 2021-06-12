@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quarkus - Frontend</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar navbar-default navbar-pf" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            Quarkust-Frontend
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-utility">
+            <li class="dropdown">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                <span class="pficon pficon-user"></span>
+                <span class="dropdown-title">
+                  {name} <b class="caret"></b>
+                </span>
+              </button>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-primary">
+            <li {idTokenTab or ''}>
+              <a href="/idToken">ID Token</a>
+            </li>
+            <li {accessTokenTab or ''}>
+              <a href="/accessToken">Access Token</a>
+            </li>
+            <li>
+              <a href="/logout">Log Out</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+</header>
+<div>
+    <div class="row card-pf">
+        <div class="card-pf-heading">
+            <h2 class="card-pf-title">Raw</h2>
+        </div>
+        <div class="card-pf-body">
+            <div class="form-group">
+                <textarea id="token" name="token" class="form-control">{token or ''}</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card-pf">
+        <div class="card-pf-heading">
+            <h2 class="card-pf-title">Header</h2>
+        </div>
+        <div class="card-pf-body">
+            <pre>{header or ''}</pre>
+        </div>
+    </div>
+
+    <div class="row card-pf">
+        <div class="card-pf-heading">
+            <h2 class="card-pf-title">Payload</h2>
+        </div>
+        <div class="card-pf-body">
+            <pre>{payload or ''}</pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/js/patternfly.min.js"></script>
+  
+</body>
+</html>

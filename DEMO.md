@@ -85,6 +85,21 @@ Back to RHSSO Admin Console. In `rhsso` realm
   - Show your registered user is in the users list
 
 
+## 6. Login and show Token data
+- Login `js-console` app by using
+  - user: `fuangwit`
+  - password: `<password>`
+- In `js-console` app
+  - click on `ID Token JSON` menu
+  - explain data in Token payload
+  - click on `Access Token JSON` menu
+  - explain data in Token payload
+- There is no `avatar_url` attribute !!
+  
+## 7. User Attibute
+In RHSSO Admin Console
+- d  
+
 
 ======
 
