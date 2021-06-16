@@ -82,4 +82,4 @@ Then run it with:
     ./scripts/3-startMail.sh
     ./scripts/4-startApp.sh
 
-[Demo steps](DEMO.md)
+[Demo steps](/docs/0.Demo.md)
