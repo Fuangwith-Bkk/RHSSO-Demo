@@ -22,6 +22,10 @@ First, build the custom providers and themes with:
 Then build the image based on RHSSO image with:
     
     docker build -t rhsso-server -f keycloak/Dockerfile .
+    
+    for ARM
+    docker buildx build --platform=linux/amd64  -t rhsso-server -f keycloak/Dockerfile .
+    
 
 Finally run it with:
 
